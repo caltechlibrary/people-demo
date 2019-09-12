@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Caltech Library's Digital Library Development Sandbox</title><link rel="stylesheet" href="/css/site.css">
+</head>
+<body>
+<header><a href="https://library.caltech.edu"><img src="/assets/liblogo.gif" alt="Caltech Library logo"></a>
+</header>
+<nav>
+<ul>
+<li><a href="/">Home</a></li>
+<li><a href="https://github.com/caltechlibrary/people.library.caltech.edu">GitHub</a></li>
+<li><a href="http://35.165.74.54/people">Demo</a></li>
+</ul>
+
+</nav>
+
+<section>
+<h1>CaltechPEOPLE - a prototype people object repository</h1>
+
+<p>This is the static website content for a proof of concept
+curation tool for use by Caltech Library and the Library&rsquo;s
+People Identity project. It is built on a prototype
+of a multi-user version of <a href="https://github.com/caltechlibrary/dataset">dataset</a>
+called <a href="https://github.com/caltechlibrary/andor">And/Or</a>.
+It is intended to show an alternative tool for curating data
+we currently maintain in a GoogleSheet.</p>
+
+<p><a href="https://choosealicense.com/licenses/bsd-3-clause"><img src="https://img.shields.io/badge/License-BSD%203--Clause-blue.svg?style=flat-square" alt="License" /></a>
+<a href="http://shields.io"><img src="https://img.shields.io/badge/Latest_release-1.1.0-b44e88.svg?style=flat-square" alt="Latest release" /></a></p>
+
+<h2>Table of contents</h2>
+
+<ul>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#installation">Installation</a></li>
+<li><a href="#known-issues-and-limitations">Known issues and limitations</a></li>
+<li><a href="#getting-help">Getting help</a></li>
+<li><a href="#license">License</a></li>
+<li><a href="#authors-and-acknowledgments">Acknowledgments</a></li>
+</ul>
+
+<h2>Introduction</h2>
+
+<p>people.library.caltech.edu is a static website designed
+to use the <a href="https://github.com/caltechlibrary/andor">And/Or</a>
+web service to curate content maintained in <a href="https://github.com/caltechlibrary/dataset">dataset</a> collections. The format of the people
+objects reflects both what is currently curated in a GoogleSheet
+and data we merge from other sources (e.g. Caltech Directory and
+ORCID.org). This is a prototype exploring this approach.</p>
+
+<h2>Installation</h2>
+
+<p>The website implentation depends on the following software</p>
+
+<ul>
+<li>A front end web server like Apache
+
+<ul>
+<li>Need to provide reverse proxy to/from <strong>And/Or</strong> service</li>
+<li>Provide/require authentication (e.g. BasicAUTH, Shibboleth, Open ID Conect)</li>
+<li>secure transport (e.g. https via TLS or OpenSSL)</li>
+</ul></li>
+<li><a href="https://github.com/caltechlibrary/dataset">dataset</a></li>
+<li><a href="https://github.com/caltechlibrary/andor">And/Or</a></li>
+</ul>
+
+<p>Refer to <a href="https://apache.org">Apache.org</a> for how to install configure
+apache, instructions for installing <strong>dataset</strong> can be found at
+<a href="https://caltechlibrary.github.io/dataset">https://caltechlibrary.github.io/dataset</a> and for <strong>And/Or</strong> at
+<a href="https://github.com/caltechlibrary/andor">https://github.com/caltechlibrary/andor</a>.</p>
+
+<h2>Known issues and limitations</h2>
+
+<p>This is website is a prototype and not intended for production.
+The purpose of it is to serve as a starting point for what
+a People Object repository might look like and work like for
+Caltech Library.</p>
+
+<h2>Getting help, making suggestions</h2>
+
+<p>See <a href="https://github.com/caltechlibrary/people.library.caltech.edu/issues">GitHub Issues</a> for this project.</p>
+
+<h2>License</h2>
+
+<p>Software produced by the Caltech Library is Copyright &copy; 2019, Caltech.  This software is freely distributed under a BSD/MIT type license.  Please see the <a href="LICENSE">LICENSE</a> file for more information.</p>
+
+<h2>Acknowledgments</h2>
+
+<p>This work was funded by the California Institute of Technology Library.</p>
+
+<p>(If this work was also supported by other organizations, acknowledge them here.  In addition, if your work relies on software libraries, or was inspired by looking at other work, it is appropriate to acknowledge this intellectual debt too.)</p>
+
+<div align="center">
+  <br>
+  <a href="https://www.caltech.edu">
+    <img width="100" height="100" src="/assets/caltech-round.svg">
+  </a>
+</div>
+
+</section>
+
+<footer>
+<span><h1><A href="https://caltech.edu">Caltech</a></h1></span>
+<span>&copy; 2019 <a href="https://www.library.caltech.edu/copyright">Caltech library</a></span>
+<address>1200 E California Blvd, Mail Code 1-32, Pasadena, CA 91125-3200</address> 
+<span>Phone: <a href="tel:+1-626-395-3405">(626)395-3405</a></span>
+<span><a href="mailto:library@caltech.edu">Email Us</a></span>
+<a class="cl-hide" href="sitemap.xml">Site Map</a>
+</footer>
+</body>
+</html>
