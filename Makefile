@@ -23,10 +23,10 @@ save:
 	if [ "$(msg)" != "" ]; then git commit -am "$(msg)"; else git commit -am "Quick Save"; fi
 	git push origin $(BRANCH)
 
-build:
+website:
 	./mk_website.py
 
-publish: build
+publish: website
 	./publish.bash
 
 
