@@ -44,6 +44,7 @@ The website implentation depends on the following software
     + Need to provide reverse proxy to/from __And/Or__ service
     + Provide/require authentication (e.g. BasicAUTH, Shibboleth, Open ID Conect)
     + secure transport (e.g. https via TLS or OpenSSL)
++ [Golang v1.13](https://golang.org)
 + [mkpage](https://github.com/caltechlibrary/mkpage)
 + [dataset](https://github.com/caltechlibrary/dataset)
 + [And/Or](https://github.com/caltechlibrary/andor)
@@ -53,6 +54,15 @@ apache, instructions for installing __mkpage__ can be found at https://caltechli
 https://caltechlibrary.github.io/dataset and for __And/Or__ at
 https://github.com/caltechlibrary/andor.
 
+For __mkpage__, __dataset__, and __And/Or__ if you have Golang version
+1.13 installed you can do something like--
+
+```bash
+    export GOPATH="${HOME}"
+    go get -u github.com/caltechlibrary/mkpage/...
+    go get -u github.com/caltechlibrary/dataset/...
+    go get -u github.com/caltechlibrary/andor/...
+```
 
 Known issues and limitations
 ----------------------------

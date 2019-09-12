@@ -61,6 +61,7 @@ ORCID.org). This is a prototype exploring this approach.</p>
 <li>Provide/require authentication (e.g. BasicAUTH, Shibboleth, Open ID Conect)</li>
 <li>secure transport (e.g. https via TLS or OpenSSL)</li>
 </ul></li>
+<li><a href="https://golang.org">Golang v1.13</a></li>
 <li><a href="https://github.com/caltechlibrary/dataset">dataset</a></li>
 <li><a href="https://github.com/caltechlibrary/andor">And/Or</a></li>
 </ul>
@@ -69,6 +70,15 @@ ORCID.org). This is a prototype exploring this approach.</p>
 apache, instructions for installing <strong>dataset</strong> can be found at
 <a href="https://caltechlibrary.github.io/dataset">https://caltechlibrary.github.io/dataset</a> and for <strong>And/Or</strong> at
 <a href="https://github.com/caltechlibrary/andor">https://github.com/caltechlibrary/andor</a>.</p>
+
+<p>For <strong>mkpage</strong>, <strong>dataset</strong>, and <strong>And/Or</strong> if you have Golang version
+1.13 installed you can do something like&ndash;</p>
+
+<pre><code class="language-bash">    export GOPATH=&quot;${HOME}&quot;
+    go get -u github.com/caltechlibrary/mkpage/...
+    go get -u github.com/caltechlibrary/dataset/...
+    go get -u github.com/caltechlibrary/andor/...
+</code></pre>
 
 <h2>Known issues and limitations</h2>
 
