@@ -44,11 +44,12 @@ The website implentation depends on the following software
     + Need to provide reverse proxy to/from __And/Or__ service
     + Provide/require authentication (e.g. BasicAUTH, Shibboleth, Open ID Conect)
     + secure transport (e.g. https via TLS or OpenSSL)
++ [mkpage](https://github.com/caltechlibrary/mkpage)
 + [dataset](https://github.com/caltechlibrary/dataset)
 + [And/Or](https://github.com/caltechlibrary/andor)
 
 Refer to [Apache.org](https://apache.org) for how to install configure 
-apache, instructions for installing __dataset__ can be found at
+apache, instructions for installing __mkpage__ can be found at https://caltechlibrary.github.io/mkpage, __dataset__ can be found at
 https://caltechlibrary.github.io/dataset and for __And/Or__ at
 https://github.com/caltechlibrary/andor.
 
