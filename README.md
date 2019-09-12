@@ -1,6 +1,7 @@
-+++
-markup = "mmark"
-+++
+{
+    "markup": "mmark"
+}
+
 
 
 People Demo - a prototype people object repository
@@ -17,6 +18,8 @@ as used in various Caltech Library metadata records.
 
 [![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg?style=flat-square)](https://choosealicense.com/licenses/bsd-3-clause)
 [![Latest release](https://img.shields.io/badge/Latest_release-1.1.0-b44e88.svg?style=flat-square)](http://shields.io)
+[![Project Status: Concept – Minimal or no implementation has been done yet, or the repository is only intended to be a limited example, demo, or proof-of-concept.](https://www.repostatus.org/badges/latest/concept.svg)](https://www.repostatus.org/#concept)
+
 
 
 Table of contents
