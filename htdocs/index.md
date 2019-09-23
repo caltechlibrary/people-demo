@@ -6,17 +6,27 @@ markup = "mmark"
 # Welcome to the People Demo
 
 This is a demonstration of using And/Or for curating metadata 
-objects that form a people collection. The collection
-format is based on [dataset](https://caltechlibrary.org/dataset).
+objects that form a people object collection. The collection
+is based on [dataset](https://caltechlibrary.org/dataset).
 [And/Or](https://github.com/caltechlibrary/andor) is a simplified
 multi-user version of the `dataset` implemented as a web service.
 
-See [/people/](/people/) to try the demo.
+## Demonstration
 
-## The demo people object
+The demonstration explores the following
 
-Our demo is intended to show managing people objects made up of
-the following fields
+1. A simple web service built on a dataset collections
+2. A role/object state permission model 
+3. An approach available for when we out grow spreadsheets
+
+Goto [/people/](/people/) to try the demo.
+
+
+## The People Object
+
+Demo shows one approach to curating individual people objects.
+The people object has the following attributes (fields).
+
 
 cl\_people\_id
 : The key to the people record in the people object collection
