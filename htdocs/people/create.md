@@ -1,6 +1,5 @@
 
-# Update people object
-
+# Create a new people object
 
 <div id="example-output">
 Loading form.
@@ -13,7 +12,7 @@ Loading form.
 
 <script src="../scripts/andor.js"></script>
 
-<script src="edit.js"></script>
+<script src="create.js"></script>
 
 <!--   END: Example People Info Form built with CL-ui.js and andor.js -->
 

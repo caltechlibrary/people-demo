@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Caltech Library's Digital Library Development Sandbox</title><link rel="stylesheet" href="/css/site.css">
+</head>
+<body>
+<header><a href="https://library.caltech.edu"><img src="/assets/liblogo.gif" alt="Caltech Library logo"></a>
+</header>
+<nav>
+<no value>
+</nav>
+
+<section>
+<h1 id="welcome-to-the-people-demo">Welcome to the People Demo</h1>
+
+<p>This is a demonstration of using And/Or for curating metadata
+objects that form a people collection. The collection
+format is based on <a href="https://caltechlibrary.org/dataset">dataset</a>.
+<a href="https://github.com/caltechlibrary/andor">And/Or</a> is a simplified
+multi-user version of the <code>dataset</code> implemented as a web service.</p>
+
+<p>See <a href="/people/">/people/</a> to try the demo.</p>
+
+<h2 id="the-demo-people-object">The demo people object</h2>
+
+<p>Our demo is intended to show managing people objects made up of
+the following fields</p>
+
+<dl>
+<dt>cl_people_id</dt>
+<dd>The key to the people record in the people object collection</dd>
+<dt>family_name</dt>
+<dd>A normalized version of a family name (e.g. Doiel, Johnson, Porter)</dd>
+<dt>given_name</dt>
+<dd>A normalized version of the given name (e.g. Robert, Kathy, George)</dd>
+<dt>thesis_id</dt>
+<dd>The creator id used in CaltechTHESIS if it exists</dd>
+<dt>author_id</dt>
+<dd>The creator id used in CaltechAUTHORS if it exists</dd>
+<dt>archivesspace_id</dt>
+<dd>The agent id from our Archives' ArchivesSpace implementation</dd>
+<dt>viaf_id</dt>
+<dd>A person's viaf id if known</dd>
+<dt>lcnaf</dt>
+<dd>A person's lcnaf if known</dd>
+<dt>isni</dt>
+<dd>A person's isni if known</dd>
+<dt>wikidata</dt>
+<dd>A person's wikidata id if known</dd>
+<dt>snac</dt>
+<dd>An ark associated with a persons' numeric SNAC id</dd>
+<dt>orcid</dt>
+<dd>The ORCID associated with the person if known</dd>
+<dt>image_url</dt>
+<dd>A URL pointing at an a image of the individual (e.g. a picture of Feynman)</dd>
+<dt>educated_at</dt>
+<dd>A free text field, such as would be found in the directory, describing education</dd>
+<dt>caltech</dt>
+<dd>A boolean value set to true if we know the person is affiliated with Caltech</dd>
+<dt>jpl</dt>
+<dd>A boolean value set to true if we know the person is affiliated with JPL</dd>
+<dt>faculty</dt>
+<dd>A boolean value set to true if we know the person is/was faculty</dd>
+<dt>alumni</dt>
+<dd>A boolean value set to true if we know the person is an alum of Caltech</dd>
+<dt>notes</dt>
+<dd>A free text field for any internal notes about the record</dd>
+<dt>status</dt>
+<dd>The object state of the record, e.g. deposited, review, published, embargoed</dd>
+</dl>
+
+</section>
+
+<footer>
+<span><h1><A href="https://caltech.edu">Caltech</a></h1></span>
+<span>&copy; 2019 <a href="https://www.library.caltech.edu/copyright">Caltech library</a></span>
+<address>1200 E California Blvd, Mail Code 1-32, Pasadena, CA 91125-3200</address> 
+<span>Phone: <a href="tel:+1-626-395-3405">(626)395-3405</a></span>
+<span><a href="mailto:library@caltech.edu">Email Us</a></span>
+<a class="cl-hide" href="sitemap.xml">Site Map</a>
+</footer>
+</body>
+</html>

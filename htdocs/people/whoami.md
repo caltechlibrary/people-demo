@@ -1,6 +1,9 @@
 
 # Who am I?
 
+Below is information about how the logged in account
+is setup in the And/Or.
+
 <div id="whoami"></div>
 
 

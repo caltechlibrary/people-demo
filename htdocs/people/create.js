@@ -41,7 +41,7 @@
     <div class="required">
         <label for="cl_people_id"><span title="this is a required field">CL PEOPLE ID</span></label>
         <input type="text" id="cl_people_id" name="cl_people_id" value="{{cl_people_id}}" title="e.g. Feynman-R-P" title="a Caltech People ID is required">
-    <br><a id="cl_people_url" href="https://feeds.library.caltech.edu/people/" target="_lookup">search feeds</a>
+	<br><a id href="https://feeds.library.caltech.edu/people/" target="_lookup">search feeds</a>
     </div>
     <div>
         <label for="family_name">Family Name:</label>
@@ -54,52 +54,52 @@
     <div>
         <label for="thesis_id">Thesis ID</label>
         <input type="text" id="thesis_id" name="thesis_id" value="{{thesis_id}}" title="e.g. FEYNMAN-R-P">
-    <br><a id="thesis_url" href="https://thesis.library.caltech.edu/cgi/search/advanced" target="_lookup">search thesis</a>
+	<br><a id="thesis_url" href="https://thesis.library.caltech.edu/cgi/search/advanced" target="_lookup">search thesis</a>
     </div>
     <div>
         <label for="authors_id">Authors ID</label>
         <input type="text" id="authors_id" name="authors_id" value="{{authors_id}}" title="e.g. FEYNMAN-R-P">
-    <br><a id="authors_url" href="https://authors.library.caltech.edu/cgi/search/advanced" target="_lookup">search authors</a>
+	<br><a id="authors_url" href="https://authors.library.caltech.edu/cgi/search/advanced" target="_lookup">search authors</a>
     </div>
     <div>
         <label for="archivesspace_id">ArchivesSpace ID</label>
         <input type="text" id="archivesspace_id" name="archivesspace_id" value="{{archivesspace_id}}" title="e.g. 3426">
-    <br><a id="archivesspace_url" href="https://collections.archives.caltech.edu/agents" target="_lookup">search archivesspace</a>
+	<br><a id="archivesspace_url" href="https://collections.archives.caltech.edu/agents" target="_lookup">search archivesspace</a>
     </div>
     <div>
         <label for="directory_id">Directory ID</label>
         <input type="text" id="directory_id" name="directory_id" value="{{directory_id}}" title="e.g. rpfeynman">
-    <br><a id="directory_url" href="https://directory.caltech.edu" target="_lookup">search the directory</a>
+	<br><a id="directory_url" href="https://directory.caltech.edu" target="_lookup">search the directory</a>
     </div>
     <div>
         <label for="viaf">VIAF ID</label>
         <input type="text" id="viaf" name="viaf" value="{{viaf}}" title="e.g. 44298691">
-    <br><a id="viaf_url" href="http://viaf.org/" target="_lookup">search viaf.org</a>
+	<br><a id="viaf_url" href="http://viaf.org/" target="_lookup">search viaf.org</a>
     </div>
     <div>
         <label for="lcnaf">LCNAF</label>
         <input type="text" id="lcnaf" name="lcnaf" value="{{lcnaf}}" title="n50002729">
-    <br><a id="lcnaf_url" href="http://id.loc.gov/authorities/names.html" target="_lookup" title="Library of Congress Name Authority File">search the loc names authority</a>
+	<br><a id="lcnaf_url" href="http://id.loc.gov/authorities/names.html" target="_lookup" title="Library of Congress Name Authority File">search the loc names authority</a>
     </div>
     <div>
         <label for="isni">ISNI</label>
         <input type="text" id="isni" name="isni" value="{{isni}}" title="e.g. 0000 0001 2096 0218">
-    <br><a id="isni_url" href="http://www.isni.org/search" target="_lookup">search isni.org</a>
+	<br><a id="isni_url" href="http://www.isni.org/search" target="_lookup">search isni.org</a>
     </div>
     <div>
         <label for="wikidata">Wikidata</label>
         <input type="text" id="wikidata" name="wikidata" value="{{wikidata}}" title="Q39246">
-    <br><a id="wikidata_url" href="https://www.wikidata.org/w/index.php?search=&search=&title=Special:Search&go=Go" target="_lookup">search wikidata.org</a>
+	<br><a id="wikidata_url" href="https://www.wikidata.org/w/index.php?search=&search=&title=Special:Search&go=Go" target="_lookup">search wikidata.org</a>
     </div>
     <div>
         <label for="snac">SNAC</label>
         <input type="text" id="snac" name="snac" value="{{snac}}" title="e.g. ark:/99166/w6v69kzn">
-    <br><a id="snac_url" href="https://snaccooperative.org/" target="_lookup">search snaccooperative.org</a>
+	<br><a id="snac_url" href="https://snaccooperative.org/" target="_lookup">search snaccooperative.org</a>
     </div>
     <div>
         <label for="orcid">ORCID</label>
         <input type="text" id="orcid" name="orcid" value="{{orcid}}">
-    <br><a id="orcid_url" href="https://orcid.org/orcid-search/search/" target="_lookup">search orcid.org</a>
+	<br><a id="orcid_url" href="https://orcid.org/orcid-search/search/" target="_lookup">search orcid.org</a>
     </div>
     <div> 
         <label for="image">Image:</label>
@@ -147,7 +147,7 @@
         <div id="errors" class="errors"></div>
         <div id="status" class="status"></div>
         <hr>
-        <button id="save" title="update an existing people record, including assigning to a new state">Update</button>
+        <button id="create" title="create a new people record">Create</button>
         <button id="reset" title="cancel the current form ">Cancel</button>
     </div>
 </div><!-- END: .controls -->
@@ -245,7 +245,6 @@ console.log("DEBUG field", field);
             orcid = form.querySelector("#orcid"),
             orcid_url = form.querySelector("#orcid_url"),
             image = form.querySelector("#image"),
-            image_url = form.querySelector("#image_url"),
             educated_at = form.querySelector("#educated_at"),
             caltech = form.querySelector("#caltech"),
             jpl = form.querySelector("#jpl"),
@@ -255,7 +254,7 @@ console.log("DEBUG field", field);
             _State = form.querySelector("#_State"),
             _errors = form.querySelector("#errors"),
             _status = form.querySelector("#status"),
-            save = form.querySelector("#save"),
+            create = form.querySelector("#create"),
             reset = form.querySelector("#reset"); 
         
         // Setup rest of form.
@@ -288,6 +287,8 @@ console.log("DEBUG field", field);
                 CL.httpGet(u, 'application/json', function (data, err) {
                     if (err) {
                         console.log("DEBUG people.cl_people_id not found");
+                        create.removeAttribute("disabled");
+                        save.setAttribute("disabled", "disabled");
                         cl_people_url.innerHTML = 'Lookup people ids at feeds.library.caltech.edu';
                         cl_people_url.setAttribute('href', 'https://feeds.library.caltech.edu/people');
                         _status.innerHTML = `Ready to create a new records for ${people.cl_people_id} ${(new Date).toLocaleTimeString()}`;
@@ -514,45 +515,39 @@ console.log("DEBUG field", field);
         _State.addEventListener("change", function(evt) {
             people._State = this.value;
         });
-        save.addEventListener("click", function (evt) {
-            let key = people.cl_people_id;
-
-            if (key === undefined || key === "") {
-                _status.innerHTML = '';
-                _errors.innerHTML = `ERROR: Missing "CL PEOPLE ID" field, ${(new Date()).toLocaleTimeString()}`;
-                cl_people_id.focus();
+        create.addEventListener("click", function(evt) {
+            console.log("DEBUG people before create", people);
+            if (people.cl_people_id === undefined || people.cl_people_id === "") {
                 evt.preventDefault();
                 return;
             }
-            // Force the ._Key to match the key/people.cl_people_id value.
-            people._Key = key;
-            _status.innerHTML = `Saving ${people.cl_people_id}`
+            console.log("DEBUG people payload ->", JSON.stringify(people));
+            _status.innerHTML = `Creating ${people.cl_people_id}`;
             _errors.innerHTML = '';
             //FIXME: Check to see if key exists
-            console.log(`DEBUG calling AndOr.updateObject(${c_name}, ${key}, ...)`);
-            AndOr.updateObject(c_name, key, people, function(data, err) {
+            AndOr.createObject(c_name, people.cl_people_id, people, function(data, err) {
                 if (err) {
                     _status.innerHTML = '';
-                    _errors.innerHTML = `ERROR: Can not save ${people.cl_people_id}, ${(new Date()).toLocaleTimeString()}`;
-                    console.log(`ERROR: JSON API message ${err} ${(new Date()).toLocaleTimeString()}`);
+                    _errors.innerHTML = `ERROR: Can not create ${people.cl_people_id}, API message ${err}`;
                     evt.preventDefault(); 
                     return;
                 }
-                _status.innerHTML = `Saved ${people.cl_people_id} ${(new Date()).toLocaleTimeString()}`;
+                _status.innerHTML = `Created ${people.cl_people_id} ${(new Date()).toLocaleTimeString()}`
                 _errors.innerHTML = '';
-                let u = new URL(window.location.href);
-                u.pathname = "/people/view.html"
-                u.search = "?cl_people_id="+ people.cl_people_id;
-                window.location = u.toString();
+	        let u = new URL(window.location.href);
+		u.pathname = "/people/edit.html";
+		u.search = "?cl_people_id="+people.cl_people_id;
+		window.location.href = u.toString();
             });
-            evt.preventDefault(); 
+            evt.preventDefault();
         }, false);
         reset.addEventListener("click", function(evt) {
             // NOTE: Need to clear any key/cl_people_id settings in
             // URL.
             let u = new URL(window.location.href);
-            u.pathname = "/people/view.html"
-            u.search = "?cl_people_id="+ people.cl_people_id;
+
+            // On reset form by reloading the page without a cl_people_id defined.
+            u.search = "";
             window.location = u.toString();
             evt.preventDefault();
         });
@@ -594,11 +589,8 @@ console.log("DEBUG field", field);
             }
         }, 1 * 1000);
     } else {
-	let u = new URL(window.location.href);
-	u.pathname = "/people/";
-	u.search = "";
-	window.location.href = u.toString();
+        people = Object.assign({}, default_people);
+        render_form(div, people, form_src, form_init);
     }
-
     window.People = people; //DEBUG
 }(document, window));

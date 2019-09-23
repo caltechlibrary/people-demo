@@ -1,8 +1,9 @@
 + [Home](/)
 + [People](./)
-+ [Who am I?](whoami.html)
-+ [Deposit](list.html?state=deposit)
-+ [Review](list.html?state=review)
++ [Create](create.html "create a new people object")
++ List by: 
++ [Deposited](list.html?state=deposit)
++ [In Review](list.html?state=review)
 + [Published](list.html?state=published)
 + [Embargoed](list.html?state=embargoed)
 + [All Objects](list.html)

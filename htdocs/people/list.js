@@ -44,8 +44,8 @@
                 for (let i = 0; i < objects.length; i++) {
                     let key = objects[i]._Key,
                         state = objects[i]._State,
-                        title = `${objects[i].family_name + ", " + objects[i].given_name} (edit ${key}, ${state})`,
-                        href = "/" + collection_name + "/edit.html?cl_people_id="+key,
+                        title = `${objects[i].family_name + ", " + objects[i].given_name} (view ${key}, ${state})`,
+                        href = "/" + collection_name + "/view.html?cl_people_id="+key,
                         li = document.createElement("li"),
                         anchor = document.createElement("a");
                     anchor.innerHTML = title;
@@ -57,7 +57,7 @@
             } else {
                 let key = objects._Key,
                     state = objects._State,
-                    title = `${objects.family_name + ", " + objects.given_name} (edit ${key}, ${state})`,
+                    title = `${objects.family_name + ", " + objects.given_name} (view ${key}, ${state})`,
                     href = "/" + collection_name + "/edit.html?cl_people_id="+key,
                     li = document.createElement("li"),
                     anchor = document.createElement("a");
