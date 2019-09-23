@@ -27,8 +27,9 @@ for key in keys:
             "_Created": f"{dt}"
     }
     for field in data:
-        fkey = field.lower()
-        obj[fkey] = data[field]
+        if not ' ' in fkey:
+            fkey = field.lower()
+            obj[fkey] = data[field]
     err = dataset.update(c_name, key, obj)
     if err != "":
         print(f"Error write {c_name} -> {key}, {err}")
