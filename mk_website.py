@@ -18,6 +18,7 @@ custom_page_map = {
 
 # NOTE: Fragments get ignored when converting to HTML
 md_fragments = [
+    "SETUP-NOTES.md",
     "TODO.md",
     "nav.md"
 ]

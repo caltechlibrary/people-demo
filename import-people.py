@@ -19,7 +19,7 @@ for key in keys:
         print(f"Error read {c_name} -> {key}, {err}")
         sys.exit(1)
     # Make fieldname lower case
-    dt = datetime.now().isoformat(' ')
+    dt = datetime.now().strftime('%Y-%m-%d %H:%I:%S')
     obj = {
             "_Key": key,
             "_State": "deposit",
@@ -27,8 +27,8 @@ for key in keys:
             "_Created": f"{dt}"
     }
     for field in data:
+        fkey = field.lower()
         if not ' ' in fkey:
-            fkey = field.lower()
             obj[fkey] = data[field]
     err = dataset.update(c_name, key, obj)
     if err != "":
